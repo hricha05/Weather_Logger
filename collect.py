@@ -6,6 +6,6 @@ sense = SenseHat()
 while True:
     sleep(5)
     myfile = open('weather.txt', 'a')
-    myfile.write(sense.temp)
+    myfile.write(str(sense.temp))
     myfile.write('\n')
     myfile.close()
